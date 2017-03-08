@@ -1,0 +1,213 @@
+
+h1 {
+  font-size: 2.5vw;
+}
+h2 {
+  font-size: 2.0vh;
+}
+h3{
+     font-size: 1.5vw;
+}
+p,li,button,address,a,input,label {
+  font-size: 1.2vmin;
+}
+html {
+    min-height:100%;
+    min-width:100%;    
+    cursor:url('Images/cursor.ico');
+}
+body {
+    max-width:100%;
+}
+h1, button, address,h3,a,input,label{
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-variant:small-caps;
+}
+p, ul {
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+row {
+    min-width:100%;
+    position:relative;
+}
+
+section {
+    background-image: url('Images/LogoHQ.png');
+    background-size: cover;
+}
+
+#buttoncolor {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#tenebrisLogoDiv {
+    background-color: #0D0D0D;
+}
+
+#tenebrisMottoDiv {
+}
+
+#backgroundimage {
+    left: 0;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.wrapper {
+    float: left;
+    clear: left;
+    display: table;
+    table-layout: fixed;
+}
+
+img.img-responsive {
+    display: table-cell;
+    max-width: 100%;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50% -50%);
+    -webkit-transform: translate(-50% -50%);
+    -o-transform: translate(-50% -50%);
+    max-width: 50px;
+    width: 100%;
+}
+
+#gifImage {
+    left: 0;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+#DylImg {
+    left: 0;
+    margin: 0;
+    min-width: 20%;
+    padding: 0;
+    top: 0;
+    height: auto;
+    width: 20%;
+    position:absolute;
+}
+
+#GlynnImg {
+    left: 0;
+    margin: 0;
+    min-width: 20%;
+    padding: 0;
+    top: 0;
+    height: auto;
+    width: 20%;
+    position:absolute;
+    margin-left:20%;
+}
+
+#DevImg {
+    left: 0;
+    margin: 0;
+    min-width: 20%;
+    padding: 0;
+    top: 0;
+    height: auto;
+    width: 20%;
+    position:absolute;
+    margin-left:60%;
+}
+
+#GImg {    
+    left: 0;
+    margin: 0;
+    min-width: 20%;
+    padding: 0;
+    top: 0;
+    height: auto;
+    width: 20%;
+    position:absolute;
+    margin-left:40%;
+}
+
+#VinceImg {
+    left: 0;
+    margin: 0;
+    min-width: 20%;
+    padding: 0;
+    top: 0;
+    height: auto;
+    width: 20%;
+    position:absolute;
+    margin-left:80%;
+}
+#fullimg {
+    width:100%;
+    position:absolute;
+}
+  @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700);
+
+  body {
+    background: #fff;
+    color: #000;
+    margin: 0;
+  }
+
+  .tiles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tile {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .5s ease-out;
+  }
+
+  .txt {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 9px;
+    line-height: 12px;
+    text-align: center;
+    cursor: default;
+  }
+
+  .x {
+    font-size: 32px;
+    line-height: 32px;
+  }

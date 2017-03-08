@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tenebris Lab</title>
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="width:100%;margin:0;padding:0">
+        <div class="col-md-12" style="padding:0">
+            <div class="navbar-header" style="position:relative;padding:0">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="padding:0%;">
+                    <img class="img-responsive" src="Images\LogoSmall.jpg" style="display: inline-block;height:100%">
+                    <span style="display: inline-block;">TENEBRIS LAB</span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#about">REGISTER</a></li>
+                    <li><a href="#contact">BLOG</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="row" style="position:relative;margin-top:1%">
+        <img id="backgroundImage" class="img-responsive" src="Image\LightBW_1.png" style="position:relative" />
+        <div class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-6 col-xs-offset-1">
+                    <h3>Lux Walker Sign Up</h3>
+                    <input type="text" id="email" placeholder="Email address" required /><br />
+                    <input type="text" id="CoName" placeholder="CompanyName" required /><br />
+                    <label>Vive Access <input type="checkbox" id="ViveAccess" /></label>
+                    <textarea id="PcSpecs" class="form-control" rows="3" placeholder="Pc Specs (CPU, RAM, GPU)" required></textarea>
+                    <textarea id="body" class="form-control" rows="3" placeholder="Why are you intetested in this software?" required></textarea>
+                    <input type="button" onclick="myFunction()" value="submit" />
+                    <script>
+                        function myFunction() {
+                            var input = document.getElementById('email');
+                            body = input.value;
+                            var input = document.getElementById('CoName');
+                            body += ";%0D%0A" + input.value;
+                            var input = document.getElementById('ViveAccess');
+                            body += ";%0D%0A" + input.value;
+                            var input = document.getElementById('PcSpecs');
+                            body += ";%0D%0A" + input.value;
+                            var input = document.getElementById('body');
+                            body += ";%0D%0A" + input.value;
+
+                            window.location.href = "mailto:Tenebrisab@gmail.com" + "?subject=LuxWalkerApply" + "&body="+body;
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="position:relative;background-color:#0D0D0D">
+
+        <img id="backgroundimage" alt="Bootstrap Image Preview" src="Images\tenebrislab_t_1.png" style="opacity:0.1;z-index:1;position:absolute;background-color:#272727" />
+        <div class="col-xs-4 col-xs-offset-1" style="color:#ffffff;z-index:2;margin-top:5%">
+            <address>
+                <abbr title="Phone">P:</abbr> (xxx) xxx-xxxx<br> info@tenebrislab.com<br> 70 Barnet Street, Cape Town<br>
+            </address>
+            <a href="https://www.facebook.com/tenebrislab/"><img src="Images/facebook-logo.png" style="width:5%;position:absolute" /></a>
+            <a href="https://twitter.com/tenebrislab"><img src="Images/twitter-logo.png" style="width:5%;position:absolute; margin-left:7%" /></a>
+            <a href="https://www.youtube.com/channel/UC34s5iAOe1DUS2G2S4UUUVw"><img src="Images/youtube-logo.png" style="width:5%;position:absolute; margin-left:14%" /></a>
+
+
+        </div>
+        <div class="col-xs-3" style="color:#ffffff;z-index:2;margin-top:2%">
+            <h3>Company</h3>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>FAQ</p>
+            <p>Blog</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="col-xs-3" style="color:#ffffff;z-index:2;">
+            <h3>News</h3>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-12">
+            <h3 class="text-center" style="position:relative">
+                © Tenebris Lab | Gerard Slee
+            </h3>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
