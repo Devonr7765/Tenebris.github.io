@@ -24,6 +24,21 @@ $('#VinceImg').hover(function () {
 }, function () {
     $(this).attr('src', 'Images/VK.jpg');
 });
+$('#SMFB').hover(function () {
+    $(this).attr('src', 'Images/facebook-logo-y.png');
+}, function () {
+    $(this).attr('src', 'Images/facebook-logo.png');
+});
+$('#SMT').hover(function () {
+    $(this).attr('src', 'Images/twitter-logo-y.png');
+}, function () {
+    $(this).attr('src', 'Images/twitter-logo.png');
+});
+$('#SMYT').hover(function () {
+    $(this).attr('src', 'Images/youtube-logo-y.png');
+}, function () {
+    $(this).attr('src', 'Images/youtube-logo.png');
+});
 
 var divPos = {};
 var offset = $("#pyramidDiv").offset();
@@ -91,4 +106,10 @@ $('#HoverTxt').hover(function () {
 }, function () {
     $(this).attr('style', 'color:#0D0D0D');
 });
-
+    window.addEventListener('load', onVrViewLoad)
+    function onVrViewLoad() {
+    var vrView = new VRView.Player('#vrview', {
+        image: 'Images/US_LAX_SCT_A_9200_SteppingStone_001_160716_01_jca.jpg',
+        is_stereo: true
+    });
+}
